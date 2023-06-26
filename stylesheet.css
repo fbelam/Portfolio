@@ -226,261 +226,115 @@ span {
     margin:  0 0 1.5rem 2rem;
  }
 
- .skill{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: url(TI_3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+.portfolio_1 {
+    background-color: rgb(20, 37, 56);
 }
-.wrapper{
-    width: 40%;
-    min-width: 570px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
+
+.portfolio_1 h2 {
+    margin-bottom: 4rem;
 }
-.container{
-    width: 100%;
-    padding: 30px 30px 50px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-} 
-.container *{
-    color: #0ef;
-    color: black;
-    font-weight: 500;
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
 }
-h2{
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 33px;
-    font-weight: bold;
-    
-}
-.details{
-    width: 100%;
-    display: flex;  
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.bar{
+
+.portfolio-container .portfolio-box {
     position: relative;
- 
-    border: 2px solid #0d96e0;
- 
-    border-radius: 20px;
-  
-}
-.bar div{
-    position: relative;
-    width: 0;
-    height: 9px;
-    border-radius: 10px;
-    background-color: #0d96e0;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem gray;
+    overflow: hidden;
+    display: flex;
 }
 
-.mh-skill .mh-professional-skill{
-    padding-right: 60px;
-    color: white;
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
 }
 
-.mh-skill .mh-professional-skill h3{
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 60px;
-    font-family: 'Poppins', sans-serif;
+.portfolio-box:hover img {
+    transform: scale(1.1);
 }
-
-.mh-professional-skills {
-    padding-left: 20%;
-    color: white;
-
-}
-
-.mh-professional-skills h3 {
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 60px;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-.mh-professional-skill li {
-    display: inline-block;
-    margin: 0 auto;
-    float: none;
-    width: 48%;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.mh-progress {
-    margin-bottom: 10px;
-    font: 900 1.14285/1 Cinzerl, cursive;
-    color: white;
-}
-
-.mh-progress .progressbar-text {
-    color: inherit !important;
-    font-family: 'poppins',sans-serif;
     
-}
 
-.progress.progress-line {
-    height: 10px;
-    margin-right: 60px;
 
-}
-
-.progress.progress-line .progressbar-text{
+.portfolio-box .portfolio-layer {
     position: absolute;
-    top: 50%;
-    left: 100%;
-    width: 60px;
-    transform: translateY(35%);
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
-}
-
-.mh-progress .mh-progress-cicle{
-    display: inline-block;
-    width: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-
-}
-
-.mh-progress path:nth-child(1){
-    stroke: rgba(0,0,0,0.7)
-
-}
-
-.mh-progress path:nth-child(2){
-    stroke: #0bceaf !important;
-
-}
-
-.candidatos {
-    position: relative;
-    margin-bottom: 15px;
-    font-family: 'Poppins',sans-serif;
-}
-
-.candidatos .parcial {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-}
-
-.candidatos .parcial .info{
-    position: relative;
-    font-family: 'Poppins',sans-serif;
-}
-
-.candidatos .parcial .info .nome{ 
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 15px;
-    font-weight: 400;
-    opacity: 0.9;
-
-    font-family: 'Poppins',sans-serif;
-}
-
-.candidatos .parcial .info .porcentagem-num{
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 14px;
-    font-weight: normal;
-}
-
-.candidatos .parcial .progressBar {
-    position: relative;
-    width: 100%;
-    height: 7px;
-    margin: 30px 0 2px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.5);
-}
-
-.candidatos .parcial .percetagem{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: #0bceaf;
-    transition: 3s all;
-    animation-name: AnimationProgress;
-    font-family: 'Poppins',sans-serif;
-}
-
-
-.inner-footer{
-    margin: 0;
-    padding: 0px 50px;
-    background-color: rgb(114, 114, 114);
-}
-
-.social-links{
+    background: linear-gradient(rgba(0,0,0,1), var(#0ef));
     display: flex;
-}
-
-.social-links ul{
-    display: flex;
-}
-
-.social-items {
-    list-style: none;
-}
-
-.social-items a {
-    padding: 10px 20px;
-    font-size: 35px;
-    color: #0ef;
-    width: 300px;
-    height: 30px;
-}
-
-.quick-links {
-    display: flex;
-    height: 70px;
-    margin: auto;
-}
-
-.quick-links ul {
-    display: flex;
-}
-
-.quick-items {
-    list-style: none;
-} 
-
-.quick-items a  {
-    text-decoration: none;
-    padding: 0px 15px;
-    font-size: 18px;
-    color: aliceblue;
-}
-
-.outer-footer {
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    color: white;
-    font-size: 18px;
-    background-color: #3f3f3f;
+    padding: 0 4rem; 
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translate(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 2rem;
+}
+  
+.portfolio-layer p {
+    font-size: 1.8rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: turquoise;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #0ef;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: rgb(20, 37, 56)
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
 }
 
 @keyframes slideRight {
