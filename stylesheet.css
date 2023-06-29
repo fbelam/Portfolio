@@ -451,4 +451,41 @@ span {
         margin-left: 10%;
         margin-right: 10%;
     }
+    
+    .btn-box {
+        display: inline-block;
+        padding: 10px 28px;
+        background: #0ef;
+        border-radius: 40px;
+        font-size: 9px;
+        color: black;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .btn-box:hover {
+        box-shadow: 0 0 5px #0ef,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+    }
+    .btn-box .btn {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        background: #0ef;
+        border: .2rem solid #0ef;
+        border-radius: .10rem;
+        font-weight: 6000;
+        letter-spacing: .10rem;
+        color: rgb(0, 0, 0);
+    
+    }
+
+    .btn-box.btns{
+        display: inline-block;
+        width: 10rem;
+    }
+    
 }
